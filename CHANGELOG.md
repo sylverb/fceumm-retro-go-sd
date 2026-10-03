@@ -1,6 +1,6 @@
 # Changelog
 
-## [v0.0.5]
+## [v0.0.6]
 
 ### Added
 
@@ -14,10 +14,6 @@
 
 - Oversized ROMs are refused when `size > flash_cache_usable_size()` (same
   ABI helper as gngeo), with a dialog showing ROM size vs flash cache max.
-- UNIF multi-chip PRG mapped in-place (contiguous span or dominant chip;
-  fixes CoolBoy 32 MiB + 256 B dumps that previously tried to allocate 64 MiB).
-- UNIF boards without an iNES id load their mapper overlay via a dedicated
-  `overlay_id` (mappers.pak aliases 600–608), so LE05 / PEC-586 / etc. work.
 
 ### Install
 
